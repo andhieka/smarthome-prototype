@@ -1,0 +1,20 @@
+How to start the web server:
+
+ 1. Make sure you have installed ruby on your computer. Ruby comes pre-installed in most modern Mac.
+
+ 2. Navigate using Command Prompt / Terminal to this folder.
+
+ 3. Type "ruby IntegServer.rb"
+
+ 4. Make sure you have installed Smart Home Client (blue icon) in your Android device. You can download the installer from http://goo.gl/QqSf0z
+
+ 5. Connect your Android device running Smart Home Client to the same LAN as the web server, and open the Smart Home Client application. If the app takes very long to connect, you can press the Android back button and go to Settings page, where you should modify the Server hostname to the IP Address of the web server. The default port is 1928, and it should not be changed unless you have modified the port settings in IntegServer.rb
+
+
+
+If you have further question, you may email the developer at andhieka.putra@gmail.com
+
+Cheers,
+
+Andhieka
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="top">
+		<TableRow
+				android:id="@+id/power_switch_table"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+            <TextView
+                    android:id="@+id/power_switch_label"
+                    android:text="@string/power_switch_label"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"/>
+            <Switch
+                    android:id="@+id/power_switch_btn"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingRight="8dp" />
+		</TableRow>
+
+		<TableLayout
+				android:id="@+id/volume_control_table"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+			<TableRow
+                    android:id="@+id/volume_seek_bar_table"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+				<TextView
+						android:id="@+id/volume_control_label"
+						android:text="@string/volume_control_label"
+						android:layout_weight="1"
+                        android:layout_width="0dp"
+						android:height="48dp"
+						android:gravity="center_vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="4dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp" />
+				<SeekBar
+						android:id="@+id/volume_control_seek_bar"
+						android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+						android:paddingLeft="20dp"
+						android:paddingRight="24dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp" />
+			</TableRow>
+			<TableRow
+                    android:id="@+id/volume_mute_table"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+				<TextView
+						android:id="@+id/volume_control_mute_label"
+						android:text="@string/volume_control_mute_label"
+						android:layout_weight="1"
+						android:layout_height="48dp"
+                        android:layout_width="0dp"
+						android:gravity="center_vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="4dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp" />
+				<Switch
+						android:id="@+id/volume_control_mute_switch"
+						android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+						android:paddingLeft="4dp"
+						android:paddingRight="8dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp" />
+			</TableRow>
+		</TableLayout>
+
+		<TableRow
+				android:id="@+id/channel_control_table"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/channel_control_label"
+                    android:text="@string/channel_control_label"
+                    android:layout_weight="1"
+                    android:layout_height="144dp"
+                    android:layout_width="0dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+            <NumberPicker
+                    android:id="@+id/channel_control_number"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_height="144dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:gravity="center_vertical" />
+        </TableRow>
+
+		<TableLayout
+				android:id="@+id/frequency_control_table"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			<TableRow>
+				<TextView
+						android:id="@+id/frequency_control_label"
+						android:text="@string/frequency_control_label"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:gravity="center_vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="8dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp" />
+                <Switch
+                        android:id="@+id/frequency_band_switch"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:textOff="FM"
+                        android:textOn="AM"
+                        />
+				<NumberPicker
+						android:id="@+id/frequency_control_number_fm"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:paddingLeft="0dp"
+						android:paddingRight="8dp"
+						android:paddingTop="4dp"
+						android:paddingBottom="4dp"
+                        android:descendantFocusability="blocksDescendants"
+						android:gravity="center_vertical" >
+				</NumberPicker>
+                <NumberPicker
+                        android:id="@+id/frequency_control_number_am"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:gravity="center_vertical" >
+                </NumberPicker>
+                <TextView
+                        android:text="MHz"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"/>
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+
+</ScrollView>

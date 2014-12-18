@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="appliance_vertical_margin">8dp</dimen>
+	<dimen name="appliance_horizontal_margin">8dp</dimen>
+	<dimen name="appliance_list_fontsize">16dp</dimen>
+
+   <dimen name="settings_heading_fontsize">8sp</dimen>
+
+</resources>

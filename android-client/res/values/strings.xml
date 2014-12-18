@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">INTEG Smart House</string>
+	<string name="tab_appliances">Appliances</string>
+	<string name="tab_rooms">Rooms</string>
+    <string name="action_settings">Application settings.</string>
+    <string name="server_hostname">Server Hostname</string>
+    <string name="server_port">Server Port</string>
+    <string name="server_hostname_summary">This can be either the URL or IP address of smart home Web server.</string>
+    <string name="server_port_summary">The communication port of smart home Web server.</string>
+    <string name="preference_connection_restart">Connection settings has been changed. Would you like to restart the app?</string>
+    <string name="preference_hostname_invalid">Invalid Hostname. Please try again.</string>
+    <string name="preference_port_invalid">Invalid port number. Please try again.</string>
+
+	<string name="power_switch_label">Power</string>
+	<string name="volume_control_label">Volume</string>
+	<string name="volume_control_mute_label">Mute</string>
+	<string name="channel_control_label">Channel</string>
+	<string name="frequency_control_label">Frequency</string>
+
+    <string name="loading_devices">Fetching devices from the server.</string>
+    <string name="connection_error_title">Connection Error</string>
+    <string name="connection_error_message">Please check your Internet connection. Then, exit and restart this app.</string>
+    <string name="json_error_message">Error retrieving device info.</string>
+    <string name="refreshing_device_info">Refreshing device info.</string>
+    <string name="device_refresh_success">Device successfully refreshed.</string>
+    <string name="device_refresh_failure">Failed to refresh device.</string>
+    <string name="device_opening">Opening device...</string>
+
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

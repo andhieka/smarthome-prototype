@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res/id.ac.usbi.smarthome.client"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+	<TableRow>
+		<ImageView
+				android:id="@+id/img"
+				android:padding="8dp"
+				android:layout_width="48dp"
+				android:layout_height="48dp" />
+		<id.ac.usbi.smarthome.client.widget.TypefacedTextView
+				android:id="@+id/txt"
+				android:paddingBottom="4dp"
+				android:paddingTop="4dp"
+				android:paddingLeft="0dp"
+				android:paddingRight="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="48dp"
+				android:textSize="16sp"
+				android:gravity="center_vertical"
+				app:typeface="fonts/Roboto-Regular.ttf" />
+	</TableRow>
+</TableLayout>
